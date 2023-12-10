@@ -1,0 +1,14 @@
+dd_dbt_bq_ml:
+  outputs:
+    dev:
+      dataset: movies
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: /Users/namxuan97/Documents/vscode_space/.cedentials/dd-dbt-sandbox-sa.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: dd-sandbox-402603
+      threads: 8
+      type: bigquery
+  target: dev
