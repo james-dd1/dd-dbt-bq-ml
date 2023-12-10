@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: movielens
+    database:  dd-sandbox-402603
+    dataset: movies
+    tables:
+      - name: movielens_ratings
+      - name: movielens_movies_raw
