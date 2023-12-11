@@ -5,8 +5,8 @@ with source as (
 
 renamed as (
     select
-        userId,
-        movieId,
+        userId as user_id,
+        movieId as movie_id,
         rating,
         timestamp_micros(`timestamp`) as rating_at
 
