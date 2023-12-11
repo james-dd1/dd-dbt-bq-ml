@@ -7,7 +7,8 @@ renamed as (
     select
         movieId as movie_id,
         title,
-        genres
+        genres as genres_org,
+        split(genres,'|') as genres
 
     from source
 )
